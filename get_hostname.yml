@@ -1,0 +1,9 @@
+---
+
+- hosts: all
+  gather_facts: false
+  tasks:
+    - name: get hostname
+      shell: "hostname"
+      register: "HOSTNAME"
+      
