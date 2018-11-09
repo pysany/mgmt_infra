@@ -6,4 +6,7 @@
     - name: get hostname
       shell: "hostname"
       register: "HOSTNAME"
+    - name: echo
+      debug:
+        msg: "{{ HOSTNAME }}"
       
